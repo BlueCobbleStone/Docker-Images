@@ -1,9 +1,8 @@
 name: Build And Push Images To Dockerhub
 
 on:
-  push:
-    branches:
-      - 'main'
+  schedule:
+    - cron: '0 6 * * 3'
 
 jobs:
   kmines:
