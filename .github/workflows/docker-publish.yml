@@ -1,4 +1,4 @@
-name: ci
+name: Build And Push Images To Dockerhub
 
 on:
   push:
