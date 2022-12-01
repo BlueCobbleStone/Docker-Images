@@ -62,6 +62,6 @@ jobs:
           platforms: |-
               linux/amd64
               linux/arm64
-          context: "{{defaultContext}}:kmines"
+          context: "{{defaultContext}}:traefik-sablier"
           push: true
           tags: bluecobblestone/traefik-sablier:latest
