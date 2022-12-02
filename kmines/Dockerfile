@@ -10,7 +10,8 @@ WORKDIR $HOME
 RUN apt update && apt install -y curl wget arc-theme software-properties-common xdotool \
     && add-apt-repository ppa:kubuntu-ppa/backports \
     && apt update \
-    && apt install -y kmines
+    && apt install -y kmines &&
+    && apt clean
     
 ####Run the App maximized######
 RUN mkdir -p /home/kasm-user/.config/autostart/ \
